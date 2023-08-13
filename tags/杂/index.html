@@ -32,7 +32,7 @@
 
 
 
-<script>var GLOBALCONFIG = {"root":"/","runtime":"2021-12-12 00:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":true,"comment":{"enable":false,"twikooUrl":null}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false};</script>
+<script>var GLOBALCONFIG = {"root":"/","runtime":"2023-08-11 00:00:00","lazyload":{"enable":false,"error":"/img/acrylic.png"},"hightlight":{"enable":false,"limit":200},"lightbox":true,"randomlinks":false,"lang":{"theme":{"dark":"已切换至深色模式","light":"已切换至浅色模式"},"copy":{"success":"复制成功","error":"复制失败"},"backtop":"返回顶部","time":{"recent":"最近","yesterday":"昨天","berforeyesterday":"前天","daybefore":"天前","runtime":"天"},"sayhello":{"morning":"早上好","noon":"中午好","afternoon":"下午好","night":"晚上好","goodnight":"晚安","iam":"!  我是"},"search":{"empty":"搜索结果为空","hit":"已为您找到 ${query} 条结果","placeholder":"输入关键词快速查找"}},"covercolor":true,"comment":{"enable":false,"twikooUrl":null},"localsearch":{"preload":true,"path":"/search.xml"}};</script><script id="site-config">var PAGECONFIG = {"is_home":false,"is_post":false,"is_page":false,"page":false};</script>
     <meta name="generator" content="Hexo 6.3.0"></head>
     <body id="body">
         
@@ -324,6 +324,13 @@
             
 
 
+    <div class="nav-button" id="search-button">
+        <a class="site-page social-icon search" title="站内搜索"
+            href="javascript:void(0);" rel="external nofollow">
+            <i class="fas fa-magnifying-glass" style="font-size: 1rem;"></i>
+        </a>
+    </div>
+
 
 <div class="nav-button" id="nav-totop" onclick="acrylic.toTop()">
     <a class="totopbtn">
@@ -411,7 +418,7 @@
         </div>
     </div>
     <div class="banner-button-group">
-        <a class="banner-button" href="/louiskj.github.io">
+        <a class="banner-button" href="/">
             <i class="fas fa-circle-chevron-right"></i>
             <span class="banner-button-text">个人主页</span>
         </a>
@@ -569,7 +576,7 @@
                 <i class="fa-solid fa-clock-rotate-left"></i>
                 <div class="item-name">最后更新 :</div>
             </div>
-            <time class="item-count" datetime="Sat Aug 12 2023 09:01:22 GMT+0800 (中国标准时间)">
+            <time class="item-count" datetime="Sun Aug 13 2023 21:35:01 GMT+0800 (中国标准时间)">
             </time>
         </div>
     
@@ -596,7 +603,7 @@
     <div class="footer-section-links">
         <div class="footer-section-left">
             <div id="footer-section-tips">
-                <div class="copyright">©2021 - 2023 By 
+                <div class="copyright">©2023 - 2023 By 
                     <a class="footer-section-link" href="/" rel="external nofollow">Zalpha Chen</a>
                     <a class="footer-section-link" href="https://github.com/hexo-theme-Acrylic/Hexo-Theme-Acrylic-Next" rel="external nofollow" target="_blank"> Theme By Acrylic-Next</a>
                     <a class="footer-section-link" href="" rel="external nofollow" target="_blank"></a>
@@ -679,6 +686,35 @@
     
 </div>
         
+    <div id="local-search">
+    <div class="search-dialog">
+        <nav class="search-nav">
+            <span class="search-dialog-title">搜索</span>
+            <button class="search-close-button">
+                <i class="fas fa-times"></i>
+            </button>
+        </nav>
+        <div id="loading-database">
+            <i class="fas fa-spinner fa-pulse"></i>
+            <span>加载中</span>
+        </div>
+        <div class="search-wrap">
+            <div class="search-box">
+                <input class="search-box-input" placeholder="输入关键词快速查找" type="text" id="search-input" autocomplete="off" spellcheck="false" autocorrect="off" autocapitalize="off">
+            </div>
+            <div id="loading-status"></div>
+            <div id="search-results"></div>
+        </div>
+    </div>
+    <div id="search-mask"></div>
+</div>
+    
+<link rel="stylesheet" href="/css/search/local-search.css">
+
+    
+<script src="/js/extend/search/local-search.js"></script>
+
+
      
         <div class="needEndHide" id="nav-music" onclick="acrylic.musicToggle()">
     <div id="nav-music-hoverTips">音乐已暂停</div>
